@@ -17,7 +17,7 @@ import ArVrMr from './pages/interfaces/ArVrMr';
 
 function App() {
   return (
-    <Router basename="/digitaltwin-hub/">
+    <Router basename="/react-template/">
       <div className="min-h-screen bg-gray-50 font-sans antialiased">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-100 to-gray-50 h-[500px]" aria-hidden="true"></div>
         <div className="relative">
@@ -41,26 +41,9 @@ function App() {
             </Routes>
           </main>
         </div>
-        <Footer />
       </div>
     </Router>
   );
 }
-
-const Footer = () => (
-  <footer className="bg-white border-t border-gray-200/80">
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <div className="flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
-          <p className="text-lg font-semibold text-gray-800">DigitalTwin Hub</p>
-          <p className="text-sm text-gray-600">The Future of Virtual Replication and Simulation</p>
-        </div>
-        <div className="text-sm text-gray-600">
-          <p>&copy; {new Date().getFullYear()} DigitalTwin Hub. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
 
 export default App;
